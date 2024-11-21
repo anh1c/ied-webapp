@@ -1,0 +1,36 @@
+<section id="loginScreenSection" class="w-50 loginScreenSection" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card appearance="outlined" style="background: white;" class="w-100">
+    <mat-card-content class="h-100">
+      <div class="w-100 h-50">
+        <img mat-card-image class="w-100 h-100" src="/random-logo.png" alt="Card image">
+      </div>
+      <div class="h50" fxLayout="column" fxLayoutGap="2%">
+        <form [formGroup]="loginForm" fxLayout="column">
+          <!--        Thông tin username-->
+          <mat-form-field>
+            <mat-label for="username">User Name:</mat-label>
+            <span matTextPrefix>
+              <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>
+              &nbsp;
+            </span>
+            <input id="username" matInput placeholder="Please Input Username" type="text" formControlName="username">
+          </mat-form-field>
+          <!--        Thông tin password-->
+          <mat-form-field>
+            <mat-label for="password">Password:</mat-label>
+            <span matTextPrefix>
+              <mat-icon aria-hidden="false" fontIcon="lock"></mat-icon>
+              &nbsp;
+            </span>
+            <input id="password" matInput placeholder="Please Input Password" type="password" formControlName="passwd">
+          </mat-form-field>
+          <mat-checkbox formControlName="saveUser">Remember</mat-checkbox>
+        </form>
+
+        <button style="background: #022498; color: white;" class="w-100 loginButton" mat-raised-button>LOGIN</button>
+        <mat-divider></mat-divider>
+        <button style="background: #cb0e16; color: white;" class="w-100 loginButton" mat-raised-button>SIGN UP</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>

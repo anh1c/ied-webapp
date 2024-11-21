@@ -1,0 +1,18 @@
+.loginScreenSection {
+  margin: auto;
+  height: 100%;
+  mat-card {
+    height: 75%;
+    .loginButton {
+      border-radius: 0;
+    }
+  }
+}
+
+:host .mat-mdc-form-field-focus-overlay {
+  background-color: #ffffff; // Desired color when input is focused
+}
+
+:host .mat-mdc-form-field-focus-overlay {
+  background-color: #ffffff; // Ripple effect color when focused
+}
