@@ -11,12 +11,20 @@ import { FlexLayoutModule } from '@ngbracket/ngx-layout';
 import {MatFormField, MatInput, MatLabel, MatPrefix} from '@angular/material/input';
 import {MatIcon} from '@angular/material/icon';
 import {MatCheckbox} from '@angular/material/checkbox';
-import {MatButton} from '@angular/material/button';
+import {MatButton, MatIconButton} from '@angular/material/button';
 import {MatDivider} from '@angular/material/divider';
 import {HomeComponent} from './home/home.component';
 import {IedManagementComponent} from './ide-management/ied-management.component';
-import {MatNestedTreeNode, MatTree, MatTreeNode, MatTreeNodeDef} from '@angular/material/tree';
+import {
+  MatNestedTreeNode,
+  MatTree,
+  MatTreeNode,
+  MatTreeNodeDef,
+  MatTreeNodePadding,
+  MatTreeNodeToggle
+} from '@angular/material/tree';
 import {MatTab, MatTabGroup} from '@angular/material/tabs';
+import {CdkDrag, CdkDropList} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -46,7 +54,12 @@ import {MatTab, MatTabGroup} from '@angular/material/tabs';
     MatTreeNodeDef,
     MatTabGroup,
     MatTab,
-    MatTreeNode
+    MatTreeNode,
+    MatTreeNodePadding,
+    MatIconButton,
+    MatTreeNodeToggle,
+    CdkDropList,
+    CdkDrag
   ],
   providers: [
     provideAnimationsAsync()
