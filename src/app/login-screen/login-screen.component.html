@@ -7,20 +7,18 @@
       <div class="h50" fxLayout="column" fxLayoutGap="2%">
         <form [formGroup]="loginForm" fxLayout="column">
           <!--        Thông tin username-->
-          <mat-form-field>
+          <mat-form-field appearance="outline">
             <mat-label for="username">User Name:</mat-label>
             <span matTextPrefix>
-              <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>
-              &nbsp;
+              <mat-icon aria-hidden="false" fontIcon="person"></mat-icon>&nbsp;
             </span>
             <input id="username" matInput placeholder="Please Input Username" type="text" formControlName="username">
           </mat-form-field>
           <!--        Thông tin password-->
-          <mat-form-field>
+          <mat-form-field appearance="outline">
             <mat-label for="password">Password:</mat-label>
             <span matTextPrefix>
-              <mat-icon aria-hidden="false" fontIcon="lock"></mat-icon>
-              &nbsp;
+              <mat-icon aria-hidden="false" fontIcon="lock"></mat-icon>&nbsp;
             </span>
             <input id="password" matInput placeholder="Please Input Password" type="password" formControlName="passwd">
           </mat-form-field>

@@ -13,11 +13,17 @@ import {MatIcon} from '@angular/material/icon';
 import {MatCheckbox} from '@angular/material/checkbox';
 import {MatButton} from '@angular/material/button';
 import {MatDivider} from '@angular/material/divider';
+import {HomeComponent} from './home/home.component';
+import {IedManagementComponent} from './ide-management/ied-management.component';
+import {MatNestedTreeNode, MatTree, MatTreeNode, MatTreeNodeDef} from '@angular/material/tree';
+import {MatTab, MatTabGroup} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginScreenComponent
+    LoginScreenComponent,
+    HomeComponent,
+    IedManagementComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,13 @@ import {MatDivider} from '@angular/material/divider';
     MatIcon,
     MatCheckbox,
     MatButton,
-    MatDivider
+    MatDivider,
+    MatNestedTreeNode,
+    MatTree,
+    MatTreeNodeDef,
+    MatTabGroup,
+    MatTab,
+    MatTreeNode
   ],
   providers: [
     provideAnimationsAsync()
